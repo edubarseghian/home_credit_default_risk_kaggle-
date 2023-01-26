@@ -8,7 +8,7 @@ This is a binary Classification task: we want to predict whether the person appl
 
 We will evaluate with the [Area Under the ROC Curve](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=es_419), our models will have to return the probabilities that a loan is not paid for each row.
 
-To access the data, you only need to execute the code below. 
+To access the data, you only need to execute the code below(if you have python3, pip3 installed in your environment of course). 
 
 !pip install gdown
 
@@ -24,3 +24,7 @@ This will download three files:
 - `application_train.csv`: Training dataset you must use to train and find the best hyperparameters on your model.
 - `application_test.csv`: Test dataset, use it only when you are done choosing the model and the parameters.
 - `HomeCredit_columns_description.csv`: This file contains descriptions for the columns in train and test datasets.
+
+## Result
+
+We end up training a RandomForrest Classifier that ends up having 0.7213435038045882 ROC-AUC-score.
